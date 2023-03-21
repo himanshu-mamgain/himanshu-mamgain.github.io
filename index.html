@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta
+      name="description"
+      content="This is my personal portfolio created with HTML & CSS and its fully responsive."
+    />
+    <meta name="author" content="Himanshu" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="icon/image" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="responsivestyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Scroll-to-top button -->
+    <div id="scroll-to-top" onclick="scrollToTop()"><i class="fa fa-arrow-up"></i></div>
+    <header>
+      <nav>
+        <h1>
+          <a href="resume/Himanshu_CV.pdf" download class="download"
+            >Download CV</a
+          >
+        </h1>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work-experience">Work Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+        </ul>
+        <!-- hamburger menu -->
+        <ul class="hamburger">
+          <li>
+            <a href="javascript:void(0);" class="icon" onclick="handleNavbar()">
+              <i id="bars" class="fa fa-bars"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div id="navbar" class="hide">
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#work-experience">Work Experience</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#certificates">CERTIFICATES</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- About -->
+      <section id="about">
+        <div class="about-container">
+          <h1>Hello, I am Himanshu</h1>
+          <p>I am a <span class="multiple-text"></span></p>
+          <div class="icon-container">
+            <a href="https://github.com/himanshu-mamgain" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/himanshu-mamgai/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://leetcode.com/HimanshuMamgain/" target="_blank"
+              ><i class="fa fa-code"></i
+            ></a>
+            <a href="https://leetcode.com/HimanshuMamgain/" target="_blank"
+              ><i class="fab fa-hackerrank"></i
+            ></a>
+            <a href="https://codepen.io/HimanshuMamgain" target="_blank"
+              ><i class="fab fa-codepen"></i
+            ></a>
+          </div>
+        </div>
+        <hr />
+      </section>
+      <!-- Work Experience -->
+      <section id="work-experience">
+        <h1>Work Experience</h1>
+        <div class="work-experience-container">
+          <div class="experience-container">
+            <div class="ball-line">
+              <div class="ball"></div>
+              <div class="line"></div>
+            </div>
+            <div class="experience">
+              <div
+                class="experience-head"
+                onclick="launch_url('https://celebaltech.com/')"
+              >
+                Celebal Technologies
+              </div>
+              <div class="experience-time">Aug 2022 - Present</div>
+              <p class="experience-description">
+                A service based startup reaching great heights, I am handling
+                complete bot development, Azure and deployment for our apps like
+                merchant based customer support, apis as service, central
+                monitor and logs across azure application insight, node servers
+                and internal product of company. On tech stack we are using
+                Typescript, Nodejs, Azure devops, socket-io, rabbitMQ, Redis and
+                dockers.
+              </p>
+            </div>
+          </div>
+          <div class="experience-container">
+            <div class="ball-line">
+              <div class="ball"></div>
+              <div class="line"></div>
+            </div>
+            <div class="experience">
+              <div
+                class="experience-head"
+                onclick="launch_url('https://www.anakin.company/')"
+              >
+                Anakin
+              </div>
+              <div class="experience-time">June 2022 - July 2022</div>
+              <p class="experience-description">
+                Anakin is a company that is building a fully automated pricing
+                engine for large eCommerce companies such as Walmart, and Uber.
+                They help them increase their revenue by up to 12% by optimizing
+                the pricing, products and trends data of their competitors. They
+                do that by collecting data and generating actionable insights.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projects -->
+      <section id="projects" style="margin-top: 10%">
+        <h1>Projects</h1>
+        <div class="projects-container">
+          <!-- Project 1 -->
+          <div class="project-container">
+            <div class="ball-line">
+              <div class="ball"></div>
+              <div class="line"></div>
+            </div>
+            <div class="project">
+              <h2 class="project-head">Car price predictor</h2>
+              <div class="project-time">Jan 2023 - Present</div>
+              <p class="project-decription">
+                Car Price Predictor" is a web application that allows users to
+                predict the price of a car based on its model and year of
+                purchase. The application is built using the MERN stack, which
+                consists of MongoDB, Express, React, and Node.js, and integrates
+                machine learning models to provide accurate predictions. Users
+                can input their car model and the year of purchase into the
+                application, and the machine learning models will analyze
+                historical data on car prices to predict the estimated value of
+                the car. The user interface is designed to be user-friendly,
+                with an intuitive layout that allows users to quickly and easily
+                enter their car information.
+              </p>
+              <ul class="project-links">
+                <li
+                  onclick="launch_url('https://github.com/orgs/Car-price-predictor/repositories')"
+                >
+                  Repository
+                  <i class="fa fa-external-link-alt"></i>
+                </li>
+                <li
+                  onclick="launch_url('https://car-price-predictor-frontend.onrender.com')"
+                >
+                  Deployed Link
+                  <i class="fa fa-external-link-alt"></i>
+                </li>
+              </ul>
+              <ul class="project-skills">
+                <li>NodeJS</li>
+                <li>ReactJS</li>
+                <li>Redux</li>
+                <li>Python</li>
+                <li>Flask</li>
+                <li>ExpressJS</li>
+                <li>JavaScript</li>
+                <li>MongoDB</li>
+                <li>JWT</li>
+                <li>Bcrypt</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-container">
+            <div class="ball-line">
+              <div class="ball"></div>
+              <div class="line"></div>
+            </div>
+            <div class="project">
+              <h2 class="project-head">Project Managment Application</h2>
+              <div class="project-time">Sep 2022 - Oct 2022</div>
+              <p class="project-decription">
+                The Project Management Application is a web-based platform built
+                using Node.js, Express.js, EJS, and MongoDB that allows users to
+                efficiently organize and manage all their projects in one place.
+                This application offers an easy-to-use interface that enables
+                users to create, edit, and delete their projects details, and
+                also store GitHub link and Deployed link
+              </p>
+              <ul class="project-links">
+                <li
+                  onclick="launch_url('https://github.com/HimanshuMamgai/Project-Management-Node-js')"
+                >
+                  Repository
+                  <i class="fa fa-external-link-alt"></i>
+                </li>
+              </ul>
+              <ul class="project-skills">
+                <li>NodeJS</li>
+                <li>ExpressJS</li>
+                <li>JavaScript</li>
+                <li>EJS</li>
+                <li>MongoDB</li>
+                <li>JWT</li>
+                <li>Bcrypt</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="project-container">
+            <div class="ball-line">
+              <div class="ball"></div>
+              <div class="line"></div>
+            </div>
+            <div class="project">
+              <h2 class="project-head">React Interactive Admin Dashboard</h2>
+              <div class="project-time">Jan 2022 - Jan 2022</div>
+              <p class="project-decription">
+                React interactive admin dashboard created with React, Material
+                UI, React Pro Sidebar, Nivo Charts, and Full Calendar that
+                provides users with interactive charts and graphics.
+              </p>
+              <ul class="project-links">
+                <li
+                  onclick="launch_url('https://github.com/himanshu-mamgain/react-admin')"
+                >
+                  Repository
+                  <i class="fa fa-external-link-alt"></i>
+                </li>
+                <li
+                  onclick="launch_url('https://react-admin-web-app.onrender.com')"
+                >
+                  Deployed Link
+                  <i class="fa fa-external-link-alt"></i>
+                </li>
+              </ul>
+              <ul class="project-skills">
+                <li>ReactJS</li>
+                <li>Material UI</li>
+                <li>React Pro Sidebar</li>
+                <li>Nivo Charts</li>
+                <li>Full Calendar</li>
+                <li>Formik</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certificates -->
+      <section id="certificates">
+        <h1>Certificates</h1>
+        <div class="certificate-container">
+          <img
+            src="./assests/certificates/Udemy_Certificate.jpg"
+            alt="Bootcamp development certificate"
+          />
+          <img
+            src="./assests/certificates/Google_Certificate.jpg"
+            alt="Google Digital Marketing Certificate"
+          />
+          <img
+            src="./assests/certificates/BitDegree_Certificate.jpg"
+            alt="BitDegree Certificate"
+          />
+          <img
+            src="./assests/certificates/freeCodeCamp.jpg"
+            alt="freeCodeCamp Certificate"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        CopyRight &copy; <span id="year"></span> Himanshu All Rights Reserved
+      </p>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+@media screen and (max-width: 1130px) {
+
+    .bar {
+        display: block;
+    }
+
+    main {
+        margin: 0;
+    }
+    #about {
+        height: 100vh;
+    }
+    .about-container h1 {
+        text-align: center;
+    }
+    #work-experience h1, #projects h1, #certificates h1 {
+        font-size: 2rem;
+    }
+    .icon-container {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .certificate-container {
+        margin-left: 10px;
+        flex-wrap: wrap;
+    }
+
+    .certificate-container img {
+        margin: 10px 0;
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    
+}
