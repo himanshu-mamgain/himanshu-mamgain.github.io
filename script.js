@@ -30,7 +30,7 @@ function launch_url(url) {
 const scrollButton = document.getElementById("scroll-to-top");
 
 window.onscroll = function() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     scrollButton.style.display = "block";
   } else {
     scrollButton.style.display = "none";
