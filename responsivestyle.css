@@ -33,7 +33,7 @@
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 925px) {
     nav ul {
         display: none;
     }
@@ -42,4 +42,10 @@
         display: block;
     }
     
+}
+
+@media screen and (min-width: 925px) {
+    #navbar {
+        display: none;
+    }
 }
