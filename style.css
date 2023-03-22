@@ -214,6 +214,7 @@ main {
 
 .experience-description {
   font-size: 1.2rem;
+  width: 70vw;
 }
 
 /* Projects */
@@ -251,6 +252,7 @@ main {
 
 .project-description {
   font-size: 1.2rem;
+  width: 70vw;
 }
 
 .project-links {
