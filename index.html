@@ -26,12 +26,14 @@
     <div id="scroll-to-top" onclick="scrollToTop()"><i class="fa fa-arrow-up"></i></div>
     <header>
       <nav>
-        <h1>
-          <a href="assests/resume/Himanshu_CV.pdf" download class="download"
+        <!-- Download CV Button -->
+        <div id="download-cv-btn">
+          <a href="assests/resume/Himanshu_CV.pdf" download class="download-link"
             >Download CV</a
           >
-        </h1>
-        <ul>
+        </div>
+        <!-- Navbar links -->
+        <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#work-experience">Work Experience</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -46,6 +48,7 @@
           </li>
         </ul>
       </nav>
+      <!-- Responsive Navbar -->
       <div id="navbar" class="hide">
         <ul>
           <li><a href="#about">ABOUT</a></li>

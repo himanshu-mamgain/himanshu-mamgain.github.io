@@ -29,7 +29,7 @@ nav {
   align-items: center;
 }
 
-nav h1 a {
+#download-cv-btn .download-link {
   margin: 0 20px;
   color: white;
   font-size: 1.5rem;
@@ -41,7 +41,7 @@ nav h1 a {
   transition: all 0.3s ease-in-out;
 }
 
-nav h1 a:hover {
+#download-cv-btn .download-link:hover {
   background-color: white;
   color: #ffb400;
 }

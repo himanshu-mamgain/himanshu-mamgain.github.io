@@ -49,3 +49,10 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 330px) {
+    #download-cv-btn .download-link {
+        font-size: 1rem;
+        padding: 6px 18px;
+    }
+}
