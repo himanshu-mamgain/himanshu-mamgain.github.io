@@ -82,6 +82,7 @@ nav ul li a:hover {
 
 #navbar ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 #navbar ul li {
