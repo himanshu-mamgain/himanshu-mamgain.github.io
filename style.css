@@ -215,6 +215,7 @@ main {
 .experience-description {
   font-size: 1.2rem;
   width: 70vw;
+  padding-bottom: 50px;
 }
 
 /* Projects */
@@ -251,8 +252,8 @@ main {
 }
 
 .project-description {
-  font-size: 1.2rem;
   width: 70vw;
+  font-size: 1.2rem;
 }
 
 .project-links {
@@ -280,6 +281,7 @@ main {
   gap: 20px;
   flex-wrap: wrap;
   padding-left: 0;
+  padding-bottom: 80px;
 }
 
 .project-skills li {
@@ -289,7 +291,6 @@ main {
 }
 
 /* Certificate */
-
 #certificates {
   margin-top: 10%;
 }
