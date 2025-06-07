@@ -23,12 +23,17 @@
   </head>
   <body>
     <!-- Scroll-to-top button -->
-    <div id="scroll-to-top" onclick="scrollToTop()"><i class="fa fa-arrow-up"></i></div>
+    <div id="scroll-to-top" onclick="scrollToTop()">
+      <i class="fa fa-arrow-up"></i>
+    </div>
     <header>
       <nav>
         <!-- Download CV Button -->
         <div id="download-cv-btn">
-          <a href="assests/resume/Himanshu_CV.pdf" download class="download-link"
+          <a
+            href="assests/resume/Himanshu_CV.pdf"
+            download
+            class="download-link"
             >Download CV</a
           >
         </div>
@@ -90,6 +95,32 @@
       <section id="work-experience">
         <h1>Work Experience</h1>
         <div class="work-experience-container">
+          <!-- experience 2 -->
+          <div class="experience-container">
+            <div class="ball-line">
+              <div class="ball"></div>
+              <div class="line"></div>
+            </div>
+            <div class="experience">
+              <div
+                class="experience-head"
+                onclick="launch_url('https://www.anakin.company/')"
+              >
+                I2pify
+              </div>
+              <div class="experience-time">Jan 2024 - April 2024</div>
+              <p class="experience-description">
+                I contributed to two client-side projects. In the first project,
+                I established a Razorpay payment gateway for Restaurant and
+                Events payments, along with setting up a payments dashboard for
+                restaurant payments and settlements. In the second project, a
+                fintech initiative, I initiated payments using UPI and
+                implemented webhooks for payments via multiple banks.
+                Additionally, I set up microservices for various payment
+                services, including UPI, cards, net banking, and banks.
+              </p>
+            </div>
+          </div>
           <!-- experience 1 -->
           <div class="experience-container">
             <div class="ball-line">
@@ -112,29 +143,6 @@
                 and internal product of company. On tech stack we are using
                 Typescript, Nodejs, Azure devops, socket-io, rabbitMQ, Redis and
                 dockers.
-              </p>
-            </div>
-          </div>
-          <!-- experience 2 -->
-          <div class="experience-container">
-            <div class="ball-line">
-              <div class="ball"></div>
-              <div class="line"></div>
-            </div>
-            <div class="experience">
-              <div
-                class="experience-head"
-                onclick="launch_url('https://www.anakin.company/')"
-              >
-                Anakin
-              </div>
-              <div class="experience-time">June 2022 - July 2022</div>
-              <p class="experience-description">
-                Anakin is a company that is building a fully automated pricing
-                engine for large eCommerce companies such as Walmart, and Uber.
-                They help them increase their revenue by up to 12% by optimizing
-                the pricing, products and trends data of their competitors. They
-                do that by collecting data and generating actionable insights.
               </p>
             </div>
           </div>

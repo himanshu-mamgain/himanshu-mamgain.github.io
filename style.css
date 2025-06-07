@@ -23,6 +23,14 @@ body {
   cursor: pointer;
 }
 
+header {
+  z-index: 100;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
