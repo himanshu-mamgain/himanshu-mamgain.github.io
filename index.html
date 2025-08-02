@@ -41,6 +41,7 @@
         <!-- Navbar links -->
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#work-experience">Work Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#certificates">Certificates</a></li>
@@ -92,12 +93,34 @@
         </div>
         <hr />
       </section>
+      <!-- Skills -->
+      <section id="skills">
+        <div class="skills-container">
+          <div class="skill-hex-fill">NodeJs</div>
+          <div class="skill-hex-fill">JavaScript</div>
+          <div class="skill-hex">TypeScript</div>
+          <div class="skill-hex-fill">Java</div>
+          <div class="skill-hex">SpringBoot</div>
+          <div class="skill-hex-fill">ExpressJs</div>
+          <div class="skill-hex">NestJs</div>
+          <div class="skill-hex-fill">PostgreSQL</div>
+          <div class="skill-hex">MySQL</div>
+          <div class="skill-hex-fill">TypeORM</div>
+          <div class="skill-hex">Sequelize</div>
+          <div class="skill-hex-fill">Redis</div>
+          <div class="skill-hex">MongoDB</div>
+          <div class="skill-hex-fill">AWS</div>
+          <div class="skill-hex">Docker</div>
+          <div class="skill-hex-fill">HTML</div>
+          <div class="skill-hex">CSS</div>
+        </div>
+      </section>
       <!-- Work Experience -->
       <section id="work-experience">
         <h1>Work Experience</h1>
         <div class="work-experience-container">
-          <!-- experience 2 -->
-          <!-- <div class="experience-container">
+          <!-- experience 3 -->
+          <div class="experience-container">
             <div class="ball-line">
               <div class="ball"></div>
               <div class="line"></div>
@@ -105,25 +128,69 @@
             <div class="experience">
               <div
                 class="experience-head"
-                onclick="launch_url('https://www.anakin.company/')"
+                onclick="launch_url('https://www.antino.com/')"
               >
-                I2pify
+                Antino
               </div>
-              <div class="experience-time">Jan 2024 - April 2024</div>
-              <p class="experience-description">
-                I contributed to two client-side projects. In the first project,
-                I established a Razorpay payment gateway for Restaurant and
-                Events payments, along with setting up a payments dashboard for
-                restaurant payments and settlements. In the second project, a
-                fintech initiative, I initiated payments using UPI and
-                implemented webhooks for payments via multiple banks.
-                Additionally, I set up microservices for various payment
-                services, including UPI, cards, net banking, and banks.
-              </p>
+              <p class="experience-position">Associate Software Developer</p>
+              <div class="experience-time">Jun 2024 - Present</div>
+              <div class="experience-description">
+                <p>
+                  Led the backend development and deployment pipeline for a
+                  comprehensive payments system. Responsibilities included
+                  managing end-to-end workflows, integrating new features, and
+                  ensuring high scalability and reliability. Currently building
+                  a custom checkout system integrating four payment
+                  gateways—Cashfree, Razorpay, PhonePe, and PineLabs—with
+                  support for autopay functionality via PhonePe.
+                </p>
+                <p>
+                  Delivered a scalable EV charging backend solution using AC/DC
+                  chargers, leveraging OCPP for charger communication and OCPI
+                  for interoperability. Oversaw technical implementation,
+                  streamlined operational workflows, and optimized system
+                  performance for expansion and efficiency.
+                </p>
+                <p>
+                  Architecting the payments platform as a set of microservices,
+                  including modules for payments, authorization, and real-time
+                  communication using Agora for video calls and WebRTC for event
+                  streaming and updates.
+                </p>
+              </div>
             </div>
-          </div> -->
+          </div>
+          <!-- experience 2 -->
+          <div class="experience-container">
+            <div class="ball-line">
+              <div class="ball"></div>
+              <div class="line"></div>
+            </div>
+            <div class="experience">
+              <div class="experience-head" onclick="launch_url('#')">
+                i2pify.ai
+              </div>
+              <p class="experience-position">Associate Software Developer</p>
+              <div class="experience-time">Jan 2024 - Apr 2024</div>
+              <div class="experience-description">
+                <p>
+                  Implemented a payment gateway integration using Razorpay for
+                  handling restaurant and event transactions. Developed a
+                  payments dashboard to manage restaurant payments, settlements,
+                  and transaction tracking with enhanced operational visibility.
+                </p>
+                <p>
+                  Developed and deployed payment microservices for UPI, cards,
+                  net banking, and banking integrations within a fintech
+                  environment. Set up UPI-based payment flows and configured
+                  webhook listeners to handle real-time updates from multiple
+                  banks.
+                </p>
+              </div>
+            </div>
+          </div>
           <!-- experience 1 -->
-          <!-- <div class="experience-container">
+          <div class="experience-container">
             <div class="ball-line">
               <div class="ball"></div>
               <div class="line"></div>
@@ -135,18 +202,32 @@
               >
                 Celebal Technologies
               </div>
-              <div class="experience-time">Aug 2022 - Present</div>
-              <p class="experience-description">
-                A service based startup reaching great heights, I am handling
-                complete bot development, Azure and deployment for our apps like
-                merchant based customer support, apis as service, central
-                monitor and logs across azure application insight, node servers
-                and internal product of company. On tech stack we are using
-                Typescript, Nodejs, Azure devops, socket-io, rabbitMQ, Redis and
-                dockers.
-              </p>
+              <p class="experience-position">Associate Software Developer</p>
+              <div class="experience-time">May 2023 - Dec 2024</div>
+              <div class="experience-description">
+                <p>
+                  In one project, I worked on a Microsoft Teams chatbot using
+                  Azure Bot Service and Azure Cosmos DB. I built an application
+                  for a healthcare project that enabled real-time chat and
+                  secure document sharing between doctors. The system also
+                  allowed data injection workflows and leveraged an FTP server
+                  for handling file uploads and distribution across multiple
+                  hospital endpoints.
+                </p>
+                <p>
+                  Additionally, I contributed to Tata Services, where I led the
+                  transformation of their automobile chatbot. The existing
+                  system was built on an open-source decision tree chatbot that
+                  used a DFS (Depth-First Search) algorithm. I completely
+                  revamped it into a modern, scalable solution using Azure Bot
+                  Services. As part of this effort, I also developed a custom
+                  npm package that connected Azure Bot with a PostgreSQL
+                  database, enabling dynamic intent handling, context
+                  management, and persistent data storage.
+                </p>
+              </div>
             </div>
-          </div> -->
+          </div>
         </div>
       </section>
       <!-- Projects -->
@@ -308,9 +389,7 @@
         CopyRight &copy; <span id="year"></span> Himanshu All Rights Reserved
       </p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.3.1/dist/pouchdb.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-    <script src="workExperienceDb.js"></script>
     <script src="script.js" type="text/javascript" defer></script>
   </body>
 </html>

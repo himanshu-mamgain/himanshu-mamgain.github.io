@@ -12,15 +12,7 @@ async function seedExperience() {
       link: "https://www.antino.com/",
       duration: "Jun 2024 - Current",
       description: `
-      • Led the backend development and deployment pipeline for a comprehensive payments system. Responsibilities
-        included managing end-to-end workflows, integrating new features, and ensuring high scalability and reliability.
-        Currently building a custom checkout system integrating four payment gateways—Cashfree, Razorpay, PhonePe,
-        and PineLabs—with support for autopay functionality via PhonePe.
-      • Delivered a scalable EV charging backend solution using AC/DC chargers, leveraging OCPP for charger
-        communication and OCPI for interoperability. Oversaw technical implementation, streamlined operational
-        workflows, and optimized system performance for expansion and efficiency.
-      • Architecting the payments platform as a set of microservices, including modules for payments, authorization,
-        and real-time communication using Agora for video calls and WebRTC for event streaming and updates.
+      
     `,
     },
     {
