@@ -405,6 +405,7 @@ hr {
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   box-sizing: border-box;
   border: 2px solid #ffb400;
+  box-shadow: 0 4px 8px #ffb400, 0 2px 4px #ffb400;
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
