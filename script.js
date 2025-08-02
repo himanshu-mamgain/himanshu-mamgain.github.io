@@ -1,4 +1,4 @@
-var typed = new Typed(".multiple-text", {
+const typed = new Typed(".multiple-text", {
   strings: ["MERN Stack Developer", "Chatbot Developer"],
   typeSpeed: 100,
   backSpeed: 100,
