@@ -309,30 +309,6 @@ main {
   margin-top: 10%;
 }
 
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin: 0 100px;
-  padding-left: 0;
-  list-style-type: none;
-}
-
-.skills-container li {
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 8px 18px;
-  border: 2px solid #ffb400;
-  border-radius: 30px;
-  transition: all 0.3s ease-in-out;
-}
-
-.skills-container li:hover {
-  background-color: #ffb400;
-  color: #000;
-}
-
 /* Education */
 #education {
   margin-top: 10%;
@@ -396,11 +372,6 @@ main {
   cursor: pointer;
 }
 
-.experience-role {
-  font-size: 1.3rem;
-  opacity: 0.95;
-}
-
 .experience-time {
   opacity: 0.8;
 }
@@ -409,19 +380,6 @@ main {
   font-size: 1.2rem;
   width: 70vw;
   padding-bottom: 50px;
-}
-
-ul.experience-description {
-  padding-left: 20px;
-  margin-top: 12px;
-}
-
-ul.experience-description li {
-  margin-bottom: 10px;
-}
-
-ul.experience-description li::marker {
-  color: #ffb400;
 }
 
 /* Projects */
