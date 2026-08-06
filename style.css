@@ -5,11 +5,81 @@
 }
 
 body {
-  background-color: black;
+  background-color: #05050a;
   color: white;
   font-family: "Poppins", sans-serif;
   margin: 0;
   position: relative;
+  overflow-x: hidden;
+}
+
+/* Animated ambient glow layer */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background: radial-gradient(
+      600px circle at 15% 20%,
+      rgba(255, 180, 0, 0.2),
+      transparent 60%
+    ),
+    radial-gradient(
+      700px circle at 85% 12%,
+      rgba(255, 120, 0, 0.16),
+      transparent 60%
+    ),
+    radial-gradient(
+      650px circle at 50% 88%,
+      rgba(255, 210, 80, 0.13),
+      transparent 60%
+    );
+  animation: aurora 20s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+/* Faint grid overlay, fading out down the page */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: linear-gradient(
+      rgba(255, 180, 0, 0.055) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 180, 0, 0.055) 1px, transparent 1px);
+  background-size: 64px 64px;
+  -webkit-mask-image: radial-gradient(
+    ellipse 90% 70% at 50% 25%,
+    #000 30%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 90% 70% at 50% 25%,
+    #000 30%,
+    transparent 100%
+  );
+}
+
+@keyframes aurora {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(2.5%, -2.5%, 0) scale(1.1);
+  }
+  100% {
+    transform: translate3d(-2.5%, 2%, 0) scale(1.05);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before {
+    animation: none;
+  }
 }
 
 /* Scroll-to-top button */
@@ -25,7 +95,10 @@ body {
 
 header {
   z-index: 100;
-  background-color: #000;
+  background-color: rgba(5, 5, 10, 0.7);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 180, 0, 0.15);
   position: fixed;
   top: 0;
   width: 100%;
@@ -120,7 +193,7 @@ main {
 }
 
 #about {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .about-container {
@@ -128,7 +201,41 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  min-height: 80vh;
+  padding: 120px 20px 40px;
+}
+
+.about-container p.about-summary {
+  max-width: 850px;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin: 10px 0 0;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+  font-size: 1.1rem;
+}
+
+.contact-container a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.contact-container a:hover {
+  color: #ffb400;
+}
+
+.contact-container i {
+  color: #ffb400;
+  margin-right: 8px;
 }
 
 .about-container h1 {
@@ -161,7 +268,9 @@ main {
 
 #projects h1,
 #work-experience h1,
-#certificates h1 {
+#certificates h1,
+#skills h1,
+#education h1 {
   text-align: center;
   font-size: 3.5rem;
   margin-bottom: 45px;
@@ -187,6 +296,70 @@ main {
 .line {
   border-left: 3px solid #ffb400;
   height: 100%;
+}
+
+/* Skills */
+#skills {
+  margin-top: 10%;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 0 100px;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.skills-container li {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 8px 18px;
+  border: 2px solid #ffb400;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.skills-container li:hover {
+  background-color: #ffb400;
+  color: #000;
+}
+
+/* Education */
+#education {
+  margin-top: 10%;
+}
+
+.education-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0 180px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+}
+
+.education-head {
+  font-size: 2rem;
+  color: #ffb400;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.education-college {
+  font-size: 1.2rem;
+  margin-top: 8px;
+}
+
+.education-time,
+.education-marks {
+  opacity: 0.8;
 }
 
 /* Work Experience */
@@ -217,6 +390,11 @@ main {
   cursor: pointer;
 }
 
+.experience-role {
+  font-size: 1.3rem;
+  opacity: 0.95;
+}
+
 .experience-time {
   opacity: 0.8;
 }
@@ -225,6 +403,19 @@ main {
   font-size: 1.2rem;
   width: 70vw;
   padding-bottom: 50px;
+}
+
+ul.experience-description {
+  padding-left: 20px;
+  margin-top: 12px;
+}
+
+ul.experience-description li {
+  margin-bottom: 10px;
+}
+
+ul.experience-description li::marker {
+  color: #ffb400;
 }
 
 /* Projects */
@@ -331,7 +522,10 @@ span {
 }
 
 footer {
-  background-color: #222222;
+  background-color: rgba(34, 34, 34, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 180, 0, 0.15);
   padding: 20px;
   display: block;
   margin-top: 5%;
@@ -354,7 +548,7 @@ hr {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background-color: black;
+  background-color: transparent;
 }
 
 /* Handle */

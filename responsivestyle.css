@@ -8,17 +8,41 @@
         margin: 0;
     }
     #about {
-        height: 100vh;
+        min-height: 100vh;
     }
     .about-container h1 {
         text-align: center;
     }
-    #work-experience h1, #projects h1, #certificates h1 {
+    #work-experience h1, #projects h1, #certificates h1, #skills h1, #education h1 {
         font-size: 2rem;
     }
     .icon-container {
         flex-wrap: wrap;
         text-align: center;
+    }
+
+    .skills-container {
+        margin: 0 20px;
+    }
+
+    .education-container {
+        margin: 0 20px;
+    }
+
+    .education {
+        width: auto;
+    }
+
+    .work-experience-container, .projects-container {
+        margin: 0 20px;
+    }
+
+    .experience-container, .project-container {
+        margin: 0;
+    }
+
+    .experience-description, .project-description {
+        width: auto;
     }
 
     .certificate-container {
@@ -33,7 +57,7 @@
 
 }
 
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 1130px) {
     nav ul {
         display: none;
     }
@@ -41,10 +65,10 @@
     .hamburger {
         display: block;
     }
-    
+
 }
 
-@media screen and (min-width: 925px) {
+@media screen and (min-width: 1131px) {
     #navbar {
         display: none;
     }
