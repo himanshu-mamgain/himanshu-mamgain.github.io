@@ -70,6 +70,45 @@
     }
 }
 
+/* Shrink the honeycomb before it can wrap to a different hexagons-per-row */
+@media screen and (max-width: 780px) {
+    .skills-container {
+        --hex-w: 88px;
+    }
+}
+
+/* Below this the hexagons are too small to hold a label like "PostgreSQL",
+   so drop the honeycomb and fall back to readable pills */
+@media screen and (max-width: 620px) {
+    .skills-container {
+        width: auto;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 0;
+    }
+
+    .skills-container > div,
+    .skills-container > div:nth-child(n + 7),
+    .skills-container > div:nth-child(12n + 7) {
+        margin: 0;
+    }
+
+    .skill-hex {
+        flex: 0 0 auto;
+        width: auto;
+        height: auto;
+        padding: 8px 16px;
+        line-height: 1.2;
+        font-size: 0.95rem;
+        clip-path: none;
+        border-radius: 30px;
+        border: 2px solid #ffb400;
+        filter: none;
+        background: transparent;
+        color: #ffb400;
+    }
+}
+
 @media screen and (max-width: 330px) {
     #download-cv-btn .download-link {
         font-size: 1rem;
